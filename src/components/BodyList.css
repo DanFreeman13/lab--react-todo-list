@@ -1,0 +1,48 @@
+.innerBody {
+  background-color: #f2f1f0;
+  border: 2px solid #2980b9;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.innerBody #inputSubmit {
+  height: 80px;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.submitText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#dialogBox {
+  height: 45px;
+  width: 400px;
+  border: 2px solid rgb(191, 191, 191);
+  border-radius: 2px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#submitButton {
+  font-weight: bolder;
+  height: 45px;
+  width: 70px;
+  font-size: 35px;
+  border: 2px solid rgb(20, 20, 20);
+  border-radius: 2px;
+  color: #000;
+  font-size: 35px;
+}
+
+.dateSelector {
+  width: 150px;
+}
