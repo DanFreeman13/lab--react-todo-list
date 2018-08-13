@@ -19,7 +19,11 @@ class List extends Component {
 
       <ul className="listElements">
         <li className="taskLine">
-          <input type="checkbox" className="indCheckbox" />{this.props.data.task}
+          <label className="taskText">
+            <input className="indCheckbox" type="checkbox" />
+            <span>{this.props.data.task}</span>
+          </label>
+          <time className="dueDate" dateTime={this.props.data.date}>{this.props.data.date}</time>
           <i index={this.props.index} className="deleteMark" onClick={ this.RemoveLine }>X</i>
         </li>
       </ul>

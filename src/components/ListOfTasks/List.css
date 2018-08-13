@@ -1,15 +1,17 @@
-.taskLine {
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 50px auto;
-}
-
 .listElements {
   position: relative;
   width: 100%;
+}
+
+.taskLine {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 50px auto;
+}
+
+.taskText {
+  display: flex;
+  flex-direction: row;
 }
 
 .indCheckbox {
@@ -17,11 +19,19 @@
   padding-right: 10px;
 }
 
+.taskText label {
+
+}
+
+.dueDate {
+}
+
 .deleteMark {
   color: #e74c3c;
   font-size: 25px;
   font-weight: bolder;
   position: absolute;
+  top: 12px;
   right: 10px;
 }
 

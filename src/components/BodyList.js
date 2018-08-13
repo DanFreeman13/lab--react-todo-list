@@ -10,6 +10,7 @@ class BodyList extends Component {
     this.state = {
       key: (listOfObjects[3].key)+1,
       task: '',
+      date: '',
     };
   }
 
@@ -19,15 +20,17 @@ class BodyList extends Component {
 
   readDate= (e) => {
     console.log(e.currentTarget)
+    var fecha = e.currentTarget.value
+    this.setState({ date: fecha });
   }
 
   storeValue = (e) => {
     e.preventDefault();
     this.setState({
       key: (this.state.key)+1,
-      task: '',
     });
     listOfObjects.push(this.state);
+    console.log(listOfObjects)
   }
 
   render() {
@@ -42,7 +45,7 @@ class BodyList extends Component {
         </form>
         <div>
           { listOfObjects.map(function(frame) {
-            return <List key={ frame.key } data={ frame }/>
+            return <List key={ frame.key } data={ frame } />
           }) }
         </div>
       </div>
